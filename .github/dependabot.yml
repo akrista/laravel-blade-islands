@@ -10,8 +10,6 @@ updates:
         patterns:
           - "laravel/*"
           - "illuminate/*"
-          - "livewire/*"
-          - "filament/*"
 
   - package-ecosystem: "github-actions"
     directory: "/"

@@ -10,7 +10,7 @@ use InvalidArgumentException;
 use function throw_if;
 use function throw_unless;
 
-final class IslandRenderer
+class IslandRenderer
 {
     public function renderDirective(string $framework, mixed ...$arguments): HtmlString
     {

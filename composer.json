@@ -7,8 +7,7 @@
         "islands",
         "react",
         "vue",
-        "svelte",
-        "akrista"
+        "svelte"
     ],
     "homepage": "https://github.com/akrista/blade-islands",
     "type": "library",
