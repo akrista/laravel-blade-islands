@@ -1,8 +1,10 @@
 <?php
 
-namespace Eznix86\BladeIslands\Tests;
+declare(strict_types=1);
 
-use Eznix86\BladeIslands\BladeIslandsServiceProvider;
+namespace Akrista\BladeIslands\Tests;
+
+use Akrista\BladeIslands\BladeIslandsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

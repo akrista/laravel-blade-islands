@@ -4,14 +4,29 @@
         "tests/TestCase.php"
     ],
     "rules": {
+        "concat_space": {
+            "spacing": "one"
+        },
+        "ordered_imports": {
+            "sort_algorithm": "alpha"
+        },
+        "blank_line_before_statement": true,
+        "method_argument_space": true,
+        "single_trait_insert_per_statement": true,
+        "types_spaces": {
+            "space": "single"
+        },
+        "not_operator_with_successor_space": false,
+        "unary_operator_spaces": false,
+        "function_declaration": false,
         "array_push": true,
         "backtick_to_shell_exec": true,
-        "date_time_immutable": false,
+        "date_time_immutable": true,
         "declare_strict_types": true,
         "lowercase_keywords": true,
         "lowercase_static_reference": true,
-        "final_class": false,
-        "final_internal_class": false,
+        "final_class": true,
+        "final_internal_class": true,
         "final_public_method_for_abstract_class": true,
         "fully_qualified_strict_types": true,
         "global_namespace_import": {
@@ -25,6 +40,7 @@
         "no_superfluous_elseif": true,
         "no_useless_else": true,
         "no_multiple_statements_per_line": true,
+        "no_unused_imports": true,
         "ordered_class_elements": {
             "order": [
                 "use_trait",
@@ -52,10 +68,14 @@
         },
         "ordered_interfaces": true,
         "ordered_traits": true,
-        "protected_to_private": true,
+        "protected_to_private": false,
         "self_accessor": true,
         "self_static_accessor": true,
         "strict_comparison": true,
-        "visibility_required": true
+        "strict_param": true,
+        "ternary_to_null_coalescing": true,
+        "visibility_required": true,
+        "combine_consecutive_issets": true,
+        "combine_consecutive_unsets": true
     }
 }

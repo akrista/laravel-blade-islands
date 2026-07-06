@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eznix86\BladeIslands\Support;
+namespace Akrista\BladeIslands\Support;
 
 use Illuminate\Support\HtmlString;
 use InvalidArgumentException;
@@ -10,7 +10,7 @@ use InvalidArgumentException;
 use function throw_if;
 use function throw_unless;
 
-class IslandRenderer
+final class IslandRenderer
 {
     public function renderDirective(string $framework, mixed ...$arguments): HtmlString
     {

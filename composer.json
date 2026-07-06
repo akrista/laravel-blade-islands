@@ -1,49 +1,55 @@
 {
-    "name": "eznix86/blade-islands",
-    "description": "Blade islands for Laravel.",
+    "name": "akrista/blade-islands",
+    "description": "Server-side Blade directives for React, Vue, and Svelte islands in Laravel. Maintained fork of eznix86/blade-islands.",
     "keywords": [
         "blade",
         "laravel",
         "islands",
         "react",
         "vue",
-        "svelte"
+        "svelte",
+        "akrista"
     ],
-    "homepage": "https://github.com/eznix86/laravel-blade-islands",
+    "homepage": "https://github.com/akrista/blade-islands",
     "type": "library",
     "license": "MIT",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Bruno Bernard",
             "email": "contact.brunobernard@gmail.com",
-            "homepage": "https://github.com/eznix86"
+            "homepage": "https://github.com/eznix86",
+            "role": "Original author"
+        },
+        {
+            "name": "Akrista",
+            "homepage": "https://github.com/akrista",
+            "role": "Fork maintainer"
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.5",
         "illuminate/support": "^13.0"
     },
     "autoload": {
         "psr-4": {
-            "Eznix86\\BladeIslands\\": "src/"
+            "Akrista\\BladeIslands\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Eznix86\\BladeIslands\\Tests\\": "tests/"
+            "Akrista\\BladeIslands\\Tests\\": "tests/"
         }
     },
     "require-dev": {
-        "driftingly/rector-laravel": "^2.1.9",
-        "larastan/larastan": "^3.9",
-        "laravel/pint": "^1.27",
+        "driftingly/rector-laravel": "^2.5",
+        "larastan/larastan": "^3.10",
+        "laravel/pint": "^1.29.3",
         "orchestra/testbench": "^11.0",
-        "pestphp/pest": "^4.0",
+        "pestphp/pest": "^4.7.4",
         "pestphp/pest-plugin-laravel": "^4.1",
-        "phpstan/phpstan": "^2.1",
-        "rector/rector": "^2.3.7",
-        "mrpunyapal/rector-pest": "^0.2.0"
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^12.5",
+        "rector/rector": "^2.5.3"
     },
     "scripts": {
         "test": "./vendor/bin/pest",
@@ -62,13 +68,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Eznix86\\BladeIslands\\BladeIslandsServiceProvider"
+                "Akrista\\BladeIslands\\BladeIslandsServiceProvider"
             ]
         }
     },
     "support": {
-        "issues": "https://github.com/eznix86/laravel-blade-islands/issues",
-        "source": "https://github.com/eznix86/laravel-blade-islands"
+        "issues": "https://github.com/akrista/blade-islands/issues",
+        "source": "https://github.com/akrista/blade-islands"
     },
     "config": {
         "allow-plugins": {

@@ -5,21 +5,21 @@ declare(strict_types=1);
 use Rector\Caching\ValueObject\Storage\FileCacheStorage;
 use Rector\Config\RectorConfig;
 use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
+use Rector\ValueObject\PhpVersion;
 use RectorLaravel\Rector\Empty_\EmptyToBlankAndFilledFuncRector;
 use RectorLaravel\Rector\FuncCall\ConfigToTypedConfigMethodCallRector;
 use RectorLaravel\Set\LaravelLevelSetList;
 use RectorLaravel\Set\LaravelSetList;
 use RectorLaravel\Set\LaravelSetProvider;
-use RectorPest\Set\PestLevelSetList;
-use RectorPest\Set\PestSetList;
 
 return RectorConfig::configure()
+    ->withPhpVersion(PhpVersion::PHP_85)
     ->withPaths([
-        __DIR__.'/src',
-        __DIR__.'/tests',
+        __DIR__ . '/src',
+        __DIR__ . '/tests',
     ])
     ->withSkip([
-        __DIR__.'/vendor',
+        __DIR__ . '/vendor',
     ])
     ->withPreparedSets(
         deadCode: true,
@@ -28,7 +28,6 @@ return RectorConfig::configure()
         privatization: true,
         earlyReturn: true,
     )
-    ->withPhpSets(php84: true)
     ->withParallel()
     ->withRules([
         EmptyToBlankAndFilledFuncRector::class,
@@ -46,10 +45,8 @@ return RectorConfig::configure()
         LaravelLevelSetList::UP_TO_LARAVEL_120,
         LaravelSetList::LARAVEL_120,
         LaravelSetList::LARAVEL_TESTING,
-        PestSetList::PEST_CODE_QUALITY,
-        PestLevelSetList::UP_TO_PEST_40,
     ])
     ->withSetProviders(LaravelSetProvider::class)
     ->withComposerBased(laravel: true)
-    ->withCache(__DIR__.'/.cache/rector', FileCacheStorage::class)
+    ->withCache(__DIR__ . '/.cache/rector', FileCacheStorage::class)
     ->withImportNames(importDocBlockNames: false, removeUnusedImports: true);

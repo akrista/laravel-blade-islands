@@ -4,9 +4,11 @@
   <img src="art/header.png" alt="Blade Islands for Laravel" width="1024">
 </p>
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/eznix86/blade-islands)](https://packagist.org/packages/eznix86/blade-islands)
-[![Total Downloads](https://img.shields.io/packagist/dt/eznix86/blade-islands)](https://packagist.org/packages/eznix86/blade-islands)
-[![License](https://img.shields.io/packagist/l/eznix86/blade-islands)](LICENSE)
+[![Latest Stable Version](https://img.shields.io/packagist/v/akrista/blade-islands)](https://packagist.org/packages/akrista/blade-islands)
+[![Total Downloads](https://img.shields.io/packagist/dt/akrista/blade-islands)](https://packagist.org/packages/akrista/blade-islands)
+[![License](https://img.shields.io/packagist/l/akrista/blade-islands)](LICENSE)
+
+> **Fork notice:** This is a maintained fork of [`eznix86/blade-islands`](https://github.com/eznix86/blade-islands). The original implementation was created by **Bruno Bernard** ([github.com/eznix86](https://github.com/eznix86)). All credit for the original design goes to him. This fork is maintained by [Akrista](https://github.com/akrista) with the same MIT license.
 
 Server-side Blade directives for React, Vue, and Svelte islands in Laravel.
 
@@ -52,7 +54,7 @@ Instead of building entire pages in a frontend framework, you can keep Blade as 
 Install the Laravel package:
 
 ```bash
-composer require eznix86/blade-islands
+composer require akrista/blade-islands
 ```
 
 Then install the browser runtime, your frontend framework, and the matching Vite plugin.
@@ -327,7 +329,7 @@ Blade Islands renders lightweight placeholders like:
 
 ## Requirements
 
-- PHP 8.3+
+- PHP 8.5+
 - Laravel 13+
 
 ## Companion Package
@@ -362,6 +364,8 @@ Blade Islands solves a different problem: adding targeted client-side interactiv
 ```bash
 composer install
 composer test
+composer test:types
+composer lint
 ```
 
 ## Contributing
@@ -376,4 +380,4 @@ Contributions are welcome.
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE) for the full text. Copyright (c) 2026 Bruno Bernard. Copyright (c) 2026 Akrista.

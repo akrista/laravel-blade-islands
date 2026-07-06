@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Eznix86\BladeIslands;
+namespace Akrista\BladeIslands;
 
-use Eznix86\BladeIslands\Support\IslandRenderer;
+use Akrista\BladeIslands\Support\IslandRenderer;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Override;
 
-class BladeIslandsServiceProvider extends ServiceProvider
+final class BladeIslandsServiceProvider extends ServiceProvider
 {
     #[Override]
     public function register(): void
@@ -26,6 +26,6 @@ class BladeIslandsServiceProvider extends ServiceProvider
 
     private function renderIsland(string $framework, string $expression): string
     {
-        return "<?php echo app('".IslandRenderer::class."')->renderDirective('{$framework}', {$expression}); ?>";
+        return "<?php echo app('" . IslandRenderer::class . "')->renderDirective('{$framework}', {$expression}); ?>";
     }
 }
