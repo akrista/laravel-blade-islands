@@ -9,7 +9,7 @@
         "vue",
         "svelte"
     ],
-    "homepage": "https://github.com/akrista/blade-islands",
+    "homepage": "https://github.com/akrista/laravel-blade-islands",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -17,12 +17,12 @@
             "name": "Bruno Bernard",
             "email": "contact.brunobernard@gmail.com",
             "homepage": "https://github.com/eznix86",
-            "role": "Original author"
+            "role": "Author"
         },
         {
             "name": "Akrista",
             "homepage": "https://github.com/akrista",
-            "role": "Fork maintainer"
+            "role": "Maintainer"
         }
     ],
     "require": {
@@ -72,8 +72,8 @@
         }
     },
     "support": {
-        "issues": "https://github.com/akrista/blade-islands/issues",
-        "source": "https://github.com/akrista/blade-islands"
+        "issues": "https://github.com/akrista/laravel-blade-islands/issues",
+        "source": "https://github.com/akrista/laravel-blade-islands"
     },
     "config": {
         "allow-plugins": {
